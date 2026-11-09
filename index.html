@@ -14,7 +14,7 @@ main::before{content:"";position:absolute;inset:0;z-index:-2;pointer-events:none
 @keyframes aurora{from{opacity:.45;transform:translateY(-12px)}to{opacity:1;transform:translateY(18px)}}
 .ambience{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:-1}
 .drifter{position:absolute;left:var(--left);bottom:-45px;width:var(--size);height:var(--size);opacity:0;animation:driftUp var(--duration) linear infinite;animation-delay:var(--delay);will-change:transform,opacity}
-.floating-heart{font:var(--size)/1 Georgia,serif;color:#ffc4d7;text-shadow:0 0 12px #f895c2a0}
+.floating-flower{font:var(--size)/1 Georgia,serif;color:#ffc4d7;text-shadow:0 0 12px #f895c2a0}
 .floating-petal{border-radius:80% 12% 75% 20%;background:linear-gradient(135deg,#ffe7d9,#e888b5);box-shadow:0 0 12px #ef9ac54a}
 .firefly{border-radius:50%;background:#ffe8b3;box-shadow:0 0 8px 2px #ffe6aa80,0 0 20px #ffcd6980}
 @keyframes driftUp{0%{opacity:0;transform:translate3d(0,0,0) rotate(0)}12%{opacity:var(--brightness,.65)}45%{transform:translate3d(var(--drift),-42vh,0) rotate(var(--turn))}80%{opacity:var(--brightness,.65)}100%{opacity:0;transform:translate3d(calc(var(--drift) * -.5),-115vh,0) rotate(calc(var(--turn) * 2))}}
@@ -46,12 +46,12 @@ main::before{content:"";position:absolute;inset:0;z-index:-2;pointer-events:none
 
 .star-bright::before,.star-bright::after{content:"";position:absolute;left:50%;top:50%;background:#fff3e5;border-radius:50%;transform:translate(-50%,-50%);box-shadow:0 0 6px #ffe6bd99}
 .star-bright::before{width:11px;height:1px}.star-bright::after{width:1px;height:11px}
-.firework-heart{width:16px;height:16px;margin:-8px 0 0 -8px;border-radius:0;background:none;box-shadow:none;font:15px/1 Georgia,serif;text-align:center;text-shadow:0 0 7px currentColor}
+.firework-flower{width:16px;height:16px;margin:-8px 0 0 -8px;border-radius:0;background:none;box-shadow:none;font:15px/1 Georgia,serif;text-align:center;text-shadow:0 0 7px currentColor}
 
 /* Verse first, bouquet at the center, a rose-glass player beneath. */
 main{padding:38px 20px 28px;justify-content:flex-start}
 .verse{position:relative;z-index:1;max-width:580px;margin:0 auto 2px;animation-delay:.15s}
-.verse::before{content:"✦  ♡  ✦";display:block;color:#e4b9c9;font-size:14px;letter-spacing:12px;margin:0 0 16px}
+.verse::before{content:"✦  ❀  ✦";display:block;color:#e4b9c9;font-size:14px;letter-spacing:12px;margin:0 0 16px}
 .verse blockquote{font-weight:normal;font-size:clamp(20px,3.6vw,27px);line-height:1.5;color:#ffe5ee}
 .verse small{display:block;font:10px/1.5 system-ui,sans-serif;letter-spacing:.24em;margin-top:14px}
 .verse p{font-size:14px;color:#d8bccd;margin:11px 0 0}
@@ -78,11 +78,11 @@ body.motion-paused *,body.motion-paused *::before,body.motion-paused *::after{an
 body.motion-paused .flower,body.motion-paused .leaf,body.motion-paused .stem,body.motion-paused .wrap,body.motion-paused .verse{animation:none!important;opacity:1;transform:none;stroke-dashoffset:0}
 body.motion-paused .drifter,body.motion-paused .fireworks{display:none}body.motion-paused .star{opacity:.65}
 @media(max-width:450px){main{padding:28px 16px 24px}.scene{width:min(100%,400px)}.verse blockquote{font-size:21px}.verse p{font-size:12px}.music-panel{padding:18px 16px 14px;border-radius:21px}.player-top{gap:12px}.record-art{width:49px;height:49px;border-radius:15px}.record-art span{font-size:34px}.track-info h2{font-size:19px}.player-eyebrow{font-size:7px;letter-spacing:.12em}.play-button{width:44px;height:44px}.track-caption{font-size:10px}}
-</style></head><body><main><div class="stars" aria-hidden="true"></div><div class="ambience" aria-hidden="true"></div><div class="fireworks" aria-hidden="true"></div><div class="verse"><blockquote>“Qual o lírio entre os espinhos, tal é a minha querida entre as donzelas.”</blockquote><small>Cânticos 2:2</small><p>Entre tantas flores, você tem um encanto especial. ♡</p></div><div class="scene"><svg id="bouquet" viewBox="0 0 520 590" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Buquê com rosas, margaridas e tulipas em tons de rosa, pêssego e creme"><defs><radialGradient id="rose"><stop stop-color="#fff0ef"/><stop offset=".65" stop-color="#f6a2bd"/><stop offset="1" stop-color="#ce5d86"/></radialGradient><radialGradient id="peach"><stop stop-color="#fff7de"/><stop offset=".65" stop-color="#ffcfb5"/><stop offset="1" stop-color="#e98c94"/></radialGradient><radialGradient id="cream"><stop stop-color="#fffefa"/><stop offset="1" stop-color="#f4d5c8"/></radialGradient><linearGradient id="paper" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ffe5e5"/><stop offset="1" stop-color="#c789a6"/></linearGradient><linearGradient id="green" x1="0" x2="1"><stop stop-color="#527a69"/><stop offset="1" stop-color="#86a18a"/></linearGradient></defs><ellipse cx="260" cy="545" rx="126" ry="17" fill="#000" opacity=".22"/><g id="stems"></g><g id="flowers"></g><g class="wrap"><path d="M115 315 Q260 375 405 315 L326 524 Q260 559 194 524Z" fill="url(#paper)" opacity=".94"/><path d="M115 315 L260 445 L194 524Z" fill="#f8c9d8" opacity=".8"/><path d="M405 315 L260 445 L326 524Z" fill="#e8a7c1" opacity=".65"/><path d="M115 315 Q260 388 405 315" fill="none" stroke="#fff2ee" stroke-width="4" opacity=".8"/><path d="M215 450 Q260 470 305 450" stroke="#a65b81" stroke-width="13" fill="none"/><path d="M258 459 C205 410 181 458 233 475 Q254 475 260 461 C285 410 332 447 287 475 Q270 481 258 459Z" fill="#d77b9e" stroke="#ffe1e4" stroke-width="2"/><path d="M260 464 Q242 493 218 511 M260 464 Q286 500 311 507" fill="none" stroke="#c76b91" stroke-width="13" stroke-linecap="round"/></g><g id="sparkles" aria-hidden="true"></g></svg></div><section class="music-panel" aria-label="Player de música">
+</style></head><body><main><div class="stars" aria-hidden="true"></div><div class="ambience" aria-hidden="true"></div><div class="fireworks" aria-hidden="true"></div><div class="verse"><blockquote>“Qual o lírio entre os espinhos, tal é a minha querida entre as donzelas.”</blockquote><small>Cânticos 2:2</small><p>Entre tantas flores, você tem um encanto especial. ❀</p></div><div class="scene"><svg id="bouquet" viewBox="0 0 520 590" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Buquê com rosas, margaridas e tulipas em tons de rosa, pêssego e creme"><defs><radialGradient id="rose"><stop stop-color="#fff0ef"/><stop offset=".65" stop-color="#f6a2bd"/><stop offset="1" stop-color="#ce5d86"/></radialGradient><radialGradient id="peach"><stop stop-color="#fff7de"/><stop offset=".65" stop-color="#ffcfb5"/><stop offset="1" stop-color="#e98c94"/></radialGradient><radialGradient id="cream"><stop stop-color="#fffefa"/><stop offset="1" stop-color="#f4d5c8"/></radialGradient><linearGradient id="paper" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ffe5e5"/><stop offset="1" stop-color="#c789a6"/></linearGradient><linearGradient id="green" x1="0" x2="1"><stop stop-color="#527a69"/><stop offset="1" stop-color="#86a18a"/></linearGradient></defs><ellipse cx="260" cy="545" rx="126" ry="17" fill="#000" opacity=".22"/><g id="stems"></g><g id="flowers"></g><g class="wrap"><path d="M115 315 Q260 375 405 315 L326 524 Q260 559 194 524Z" fill="url(#paper)" opacity=".94"/><path d="M115 315 L260 445 L194 524Z" fill="#f8c9d8" opacity=".8"/><path d="M405 315 L260 445 L326 524Z" fill="#e8a7c1" opacity=".65"/><path d="M115 315 Q260 388 405 315" fill="none" stroke="#fff2ee" stroke-width="4" opacity=".8"/><path d="M215 450 Q260 470 305 450" stroke="#a65b81" stroke-width="13" fill="none"/><path d="M258 459 C205 410 181 458 233 475 Q254 475 260 461 C285 410 332 447 287 475 Q270 481 258 459Z" fill="#d77b9e" stroke="#ffe1e4" stroke-width="2"/><path d="M260 464 Q242 493 218 511 M260 464 Q286 500 311 507" fill="none" stroke="#c76b91" stroke-width="13" stroke-linecap="round"/></g><g id="sparkles" aria-hidden="true"></g></svg></div><section class="music-panel" aria-label="Player de música">
 <audio id="musicPlayer" preload="metadata" hidden><source src="assets/evergreen-love.mp3" type="audio/mpeg"></audio>
 <div class="player-top"><div class="record-art" aria-hidden="true"><span>✿</span></div><div class="track-info"><span class="player-eyebrow">uma trilha para este momento</span><h2>Evergreen Love</h2><p>Strings &amp; Heart <span class="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i></span></p></div><button id="playPause" class="play-button" type="button" aria-label="Tocar música"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="play-icon" d="M9 5 20 12 9 19Z"/><path class="pause-icon" d="M7 5h4v14H7zm7 0h4v14h-4z"/></svg></button></div>
-<div class="track-progress"><label class="sr-only" for="musicSeek">Posição da música</label><input id="musicSeek" type="range" min="0" max="1000" value="0" disabled><div class="track-times"><span id="elapsed">0:00</span><span class="track-caption">feito para florescer ♡</span><span id="duration">–:––</span></div></div><span id="musicStatus" class="player-status" role="status"></span>
-</section><div class="garden-actions"><button id="again" type="button">Florescer novamente ✨</button><button id="motionToggle" class="motion-toggle" type="button" aria-pressed="false">Pausar animações</button></div><footer>Feito com carinho ♡</footer></main><script>
+<div class="track-progress"><label class="sr-only" for="musicSeek">Posição da música</label><input id="musicSeek" type="range" min="0" max="1000" value="0" disabled><div class="track-times"><span id="elapsed">0:00</span><span class="track-caption">feito para florescer ❀</span><span id="duration">–:––</span></div></div><span id="musicStatus" class="player-status" role="status"></span>
+</section><div class="garden-actions"><button id="again" type="button">Florescer novamente ✨</button><button id="motionToggle" class="motion-toggle" type="button" aria-pressed="false">Pausar animações</button></div><footer>Feito com carinho ❀</footer></main><script>
 const NS="http://www.w3.org/2000/svg",stems=document.getElementById("stems"),flowers=document.getElementById("flowers"),sparkles=document.getElementById("sparkles");function el(tag,attrs,parent){let e=document.createElementNS(NS,tag);Object.entries(attrs||{}).forEach(([k,v])=>e.setAttribute(k,v));parent.appendChild(e);return e}
 const specs=[ [185,230,39,"rose"],[260,173,47,"rose"],[340,232,41,"peach"],[130,300,32,"daisy"],[395,297,34,"daisy"],[208,315,35,"peach"],[307,310,36,"rose"],[158,172,30,"tulip"],[371,164,32,"tulip"],[260,277,31,"daisy"],[104,249,26,"peach"],[421,242,28,"rose"],[222,111,27,"daisy"],[303,117,29,"peach"]];
 function draw(){stems.replaceChildren();flowers.replaceChildren();sparkles.replaceChildren();specs.forEach(([x,y,r,type],i)=>{let delay=(i*.13).toFixed(2)+"s",s=el("path",{d:`M260 454 Q${x+20} ${y+120} ${x} ${y}`,stroke:"url(#green)","stroke-width":i%3===0?5:4,fill:"none","stroke-linecap":"round",class:"stem",style:`--delay:${delay}`},stems);let midX=(x+260)/2,midY=(y+454)/2;el("path",{d:`M${midX} ${midY} q-43 -34 -43 3 q24 22 43 -3`,fill:"#789d7b",class:"leaf",style:`--delay:${delay}`},stems);el("path",{d:`M${midX} ${midY+12} q43 -34 43 3 q-24 22 -43 -3`,fill:"#5f8b75",class:"leaf",style:`--delay:${delay}`},stems);
@@ -136,10 +136,10 @@ function drawAmbience(){
 ambience.replaceChildren();
 for(let i=0;i<28;i++){
 const particle=document.createElement("span");
-const type=i%4===0?"floating-heart":i%4===1?"floating-petal":"firefly";
+const type=i%4===0?"floating-flower":i%4===1?"floating-petal":"firefly";
 particle.className="drifter "+type;
-if(type==="floating-heart")particle.textContent="♡";
-const size=type==="floating-heart"?18+Math.random()*15:type==="floating-petal"?8+Math.random()*7:2+Math.random()*3;
+if(type==="floating-flower")particle.textContent="❀";
+const size=type==="floating-flower"?16+Math.random()*10:type==="floating-petal"?8+Math.random()*7:2+Math.random()*3;
 particle.style.setProperty("--size",size+"px");
 const duration=12+Math.random()*12;
 particle.style.setProperty("--duration",duration+"s");
@@ -182,9 +182,9 @@ rocket.className="firework-rocket";
 shell.appendChild(rocket);
 for(let j=0;j<40;j++){
 const ray=document.createElement("span");
-const isHeart=j%5===0;
-ray.className=isHeart?"firework-ray firework-heart":"firework-ray";
-if(isHeart)ray.textContent=j%10===0?"♡":"♥";
+const isFlower=j%5===0;
+ray.className=isFlower?"firework-ray firework-flower":"firework-ray";
+if(isFlower)ray.textContent=j%10===0?"❀":"✿";
 const angle=j*Math.PI*2/40;
 const radius=j%2===0?1:.62;
 ray.style.setProperty("--dx",Math.cos(angle)*radius);
